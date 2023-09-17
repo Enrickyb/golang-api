@@ -1,13 +1,20 @@
 package handler
 
 import (
-	"net/http"
-
+	"github.com/Enrickyb/golang-api/schemas"
 	"github.com/gin-gonic/gin"
 )
 
 func GetOpeningHandler(ctx *gin.Context) {
-	ctx.JSON(http.StatusOK, gin.H{
-		"message": "Opening",
-	})
+	openings := []schemas.Opening{}
+
+	if err := db.Find(&openings).Error; err != nil {
+		sendError(ctx, 500, err.Error())
+		logger.ErrorF("Error finding openings: %v", err)
+
+		return
+	}
+
+	sendSucess(ctx, "Get Openings", openings)
+
 }
