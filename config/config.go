@@ -1,8 +1,8 @@
 package config
 
 import (
-	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/postgres"
+	_ "gorm.io/driver/postgres"
+	"gorm.io/gorm"
 )
 
 var (
@@ -13,16 +13,17 @@ var (
 func Init() error {
 	var err error
 
-	// Substitua as informações de conexão do PostgreSQL abaixo
-	db, err = gorm.Open("postgres", "host=localhost port=32768 user=postgres dbname=postgres password=postgrespw sslmode=disable")
+	db, err = InitializePostgres()
 
 	if err != nil {
 		return err
 	}
 
-	// Outras configurações do GORM, como definir um pool de conexão ou modo de log, podem ser feitas aqui
-
 	return nil
+}
+
+func GetPostgres() *gorm.DB {
+	return db
 }
 
 func GetLogger(p string) *Logger {
