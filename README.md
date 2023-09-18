@@ -42,11 +42,3 @@ Você pode acessar a documentação Swagger em [http://localhost:8080/swagger/in
 
 Sinta-se à vontade para contribuir com este projeto. Abra problemas (issues) e envie solicitações de pull (pull requests) para melhorias, correções de bugs ou novos recursos.
 
-## Contato
-
-Para dúvidas ou suporte, entre em contato com [seu nome] via [seu email].
-
-## Licença
-
-Este projeto está licenciado sob a Licença [Nome da Licença] - consulte o arquivo LICENSE.md para obter detalhes.
-
