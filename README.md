@@ -19,7 +19,6 @@ Antes de executar a aplicação, você precisa configurar o ambiente e o banco d
 
 ### Executando a Aplicação
 
-```bash
 go run main.go
 
 A aplicação será executada na porta padrão 8080.
