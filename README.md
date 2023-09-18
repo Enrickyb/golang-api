@@ -25,11 +25,11 @@ Antes de executar a aplicação, você precisa configurar o ambiente e o banco d
   
   Uso da API
   Rotas
-  GET /api/v1/opening: Obter todas as aberturas de vagas.
-  GET /api/v1/opening/:id: Obter uma abertura de vaga por ID.
-  POST /api/v1/opening: Criar uma nova abertura de vaga.
-  PUT /api/v1/opening/:id: Atualizar uma abertura de vaga existente.
-  DELETE /api/v1/opening/:id: Excluir uma abertura de vaga por ID.
+  -GET /api/v1/opening: Obter todas as aberturas de vagas.
+  -GET /api/v1/opening/:id: Obter uma abertura de vaga por ID.
+  -POST /api/v1/opening: Criar uma nova abertura de vaga.
+  -PUT /api/v1/opening/:id: Atualizar uma abertura de vaga existente.
+  -DELETE /api/v1/opening/:id: Excluir uma abertura de vaga por ID.
   
   Documentação Swagger
   Você pode acessar a documentação Swagger em http://localhost:8080/swagger/index.html para explorar e testar as rotas da API.
